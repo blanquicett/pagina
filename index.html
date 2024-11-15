@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo y Comodidad|Sitio Oficial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <!-- Header/Nav Principal -->
+<header class="main-header">
+    <div class="header-top">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fas fa-truck"></i> Envío gratis en compras superiores a $150.000</span>
+                <span><i class="fas fa-clock"></i> Entrega 24/48h</span>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container nav-container">
+            
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="/" class="active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formulario.html">Comprar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <button class="icon-btn" title="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" title="Mi Cuenta">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="icon-btn cart-btn" title="Carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="carrito-modal" id="carrito-modal">
+        <div class="carrito-contenido">
+            <h2>Tu Carrito</h2>
+            <div id="carrito-items"></div>
+            <div class="carrito-total">
+                <p>Total: $<span id="total-carrito">0</span></p>
+            </div>
+            <button class="btn-cerrar">Cerrar</button>
+        </div>
+    </div>
+</header>
+   
+   <section class="bienvenida">
+    <h2>Bienvenido a Estilo y Comodidad</h2>
+    <p>Somos una empresa dedicada a la venta de productos de moda y comodidad para todos los gustos y edades.</p>
+   </section>
+
+   <main>
+    
+    <section class="productos-destacados">
+        <h1>Nuestros Productos Destacados de Jordan</h1>
+        
+        <div class="producto_generales">
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A1.webp">
+                    <img class="imagen2" src="Imagenes/A1P2.webp">
+                </div>
+                <h3>JORDAN</h3>
+                <p>Medias al tobillo EveryDay</p>
+                <h2>Precio: $150.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A2.webp">
+                    <img class="imagen2" src="Imagenes/A2P2.webp">
+                </div>
+                <h3>AIR JORDAN 1 LOW SE</h3>
+                <p>Caldazo para niños grandes</p>
+                <h2>Precio: $780.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A3.webp">
+                    <img class="imagen2" src="Imagenes/A4P2.webp">
+                    
+                </div>
+                <h3>AIR JORDAN 1 LOW BG</h3>
+                <p>Caldazo para niños</p>
+                <h2>Precio: $650.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A4.webp">
+                    <img class="imagen2" src="Imagenes/A3P2.webp">
+                    
+                </div>
+                <h3>AIR JORDAN 1 LOW SE</h3>
+                <p>Caldazo para hombres</p>
+                <h2>Precio: $870.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos"  >
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A5P1.webp">
+                    <img class="imagen2" src="Imagenes/A5P2.webp">
+                </div>
+                <h3>AIR JORDAN 1 LOW SE</h3>
+                <p>Caldazo para hombres</p>
+                <h2>Precio: $870.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A6.webp">
+                    <img class="imagen2" src="Imagenes/A6P2.webp">
+                </div>
+                <h3>TATUM 2 "DENIUM"</h3>
+                <p>Caldazo de básquetbol para hombres</p>
+                <h2>Precio: $750.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A7P1.png">
+                    <img class="imagen2" src="Imagenes/A7P2.png">
+                </div>
+                <h3>AIR JORDAN 1 LOW</h3>
+                <p>Caldazo para hombres</p>
+                <p>4 colores disponibles</p>
+                <h2>Precio: $660.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A8.webp">
+                    <img class="imagen2" src="Imagenes/A8P2.webp">
+                </div>
+                <h3>AIR JORDAN 1 LOW</h3>
+                <p>Caldazo para hombres</p>
+                <h2>Precio: $850.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A9.webp">
+                    <img class="imagen2" src="Imagenes/A9P2.webp">
+                </div>
+                <h3>AIR JORDAN WORDMARK</h3>
+                <p>Buzo con gorro camuflaje para hombre</p>
+                <h2>Precio: $670.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A10.webp">
+                    <img class="imagen2" src="Imagenes/A10P2.webp">
+                </div>
+                <h3>AIR JORDAN WORDMARK</h3>
+                <p>Pantalones de tejido Flecee wordmark Ele camuflafos para hombre</p>
+                <h2>Precio: $560.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+        </div>
+    </section>
+
+    <section class="productos-destacados">
+        <h1>Nuestros Productos Destacados de Nike</h1>
+        <div class="producto_generales">
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A11.webp">
+                    <img class="imagen2" src="Imagenes/A11P2.webp">
+                </div>
+                <h3>NIKE ZOOM VEMERO 5</h3>
+                <p>Calzado para hombre</p>
+                <h2>Precio: $1.000.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A12.webp">
+                    <img class="imagen2" src="Imagenes/A12P2.webp">
+                </div>
+                <h3>NIKE ZOOM VEMERO 5</h3>
+                <p>Calzado para mujeres</p>
+                <h2>Precio: $870.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A13.webp">
+                    <img class="imagen2" src="Imagenes/A13P2.webp">
+                </div>
+                <h3>NIKE V2K RUN GORE-TEX</h3>
+                <p>Calzado para mujeres</p>
+                <h2>Precio: $870.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A14.webp">
+                    <img class="imagen2" src="Imagenes/A14P2.webp">
+                </div>
+                <h3>NIKE AIR PEGASUS 2005 C.O.R</h3>
+                <p>Calzado para mujeres</p>
+                <h2>Precio: $870.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+            <article class="productos">
+                <div class="contenedor-imagenes">
+                    <img class="imagen1" src="Imagenes/A15.webp">
+                    <img class="imagen2" src="Imagenes/A15P2.webp">
+                </div>
+                <h3>NIKE CORTEZ LEATHER</h3>
+                <p>Calzado para mujeres</p>
+                <h2>Precio: $550.000</h2>
+                <button class="Comprar" id="Añadir"> Añadir al carrito</button> 
+            </article>
+        </div>
+    </section>
+
+   </main>
+   
+   <footer class="main-footer"></footer>
+    <div class="footer-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>¡Únete a nuestra comunidad!</h3>
+                    <p>Recibe las últimas tendencias y ofertas exclusivas</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    
+                    <p>Transformando el mundo, un paso a la vez con el mejor calzado de diseño y calidad.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="formulario.html">Comprar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> BOGOTA D.C</li>
+                        <li><i class="fas fa-phone"></i> +57 000.000.0000</li>
+                        <li><i class="fas fa-envelope"></i> info@stepstyle.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bottom-content">
+                <p>&copy; 2024 StepStyle. Todos los derechos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+</body>
+<script src="scrip.js"></script>
+</html>
+

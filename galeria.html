@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Productos - StepStyle</title>
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="secondary-nav">
+        <div class="container">
+            <a href="index.html" class="back-home">
+                <i class="fas fa-chevron-left"></i>
+                <span>GALERIA</span>
+            </a>
+            <div class="page-title">
+                <h1>Galería</h1>
+            </div>
+        </div>
+    </nav>
+
+    <header class="galeria-hero" data-aos="fade">
+        <div class="hero-content">
+            <h1>Nuestra Colección</h1>
+            <p>Descubre el arte del calzado en cada paso</p>
+        </div>
+    </header>
+
+    <main class="galeria-container">
+        <!-- Filtros y Búsqueda -->
+        <section class="filtros-section" data-aos="fade-down">
+            <div class="search-bar">
+                <input type="text" id="buscar-productos" placeholder="Buscar productos...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="filtros-container">
+                <div class="filtros-grupo">
+                    <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                    <button class="filtro-btn" data-categoria="deportivos">Deportivos</button>
+                    <button class="filtro-btn" data-categoria="casuales">Casuales</button>
+                    <button class="filtro-btn" data-categoria="formales">Formales</button>
+                    <button class="filtro-btn" data-categoria="botas">Botas</button>
+                </div>
+                
+                <div class="ordenar-grupo">
+                    <select id="ordenar-por">
+                        <option value="relevancia">Relevancia</option>
+                        <option value="precio-bajo">Precio: Menor a Mayor</option>
+                        <option value="precio-alto">Precio: Mayor a Menor</option>
+                        <option value="nuevos">Más Nuevos</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filtros-activos">
+                <span class="filtro-tag">Deportivos <i class="fas fa-times"></i></span>
+                <span class="filtro-tag">$50.000 - $100.000 <i class="fas fa-times"></i></span>
+            </div>
+        </section>
+
+        <!-- Grid de Productos -->
+        <section class="productos-grid">
+            <!-- Producto 1 -->
+            <article class="producto-card" data-aos="fade-up">
+                <div class="producto-etiquetas">
+                    <span class="etiqueta nuevo">Nuevo</span>
+                    <span class="etiqueta descuento">-20%</span>
+                </div>
+                <div class="producto-imagen">
+                    <img src="Imagenes/A5P3.webp" alt="Zapatilla Deportiva Pro">
+                    <div class="producto-acciones">
+                        <button class="btn-accion" title="Vista rápida">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-accion" title="Agregar a favoritos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn-accion" title="Agregar al carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <div class="producto-categoria">Deportivos</div>
+                    <h3>Zapatilla Deportiva Pro</h3>
+                    <div class="producto-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(128)</span>
+                    </div>
+                    <div class="producto-precio">
+                        <span class="precio-anterior">$129.900</span>
+                        <span class="precio-actual">$103.920</span>
+                    </div>
+                    <div class="producto-colores">
+                        <span class="color" style="background: #000000;" title="Negro"></span>
+                        <span class="color" style="background: #FF0000;" title="Rojo"></span>
+                        <span class="color" style="background: #0000FF;" title="Azul"></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="producto-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="producto-etiquetas">
+                    <span class="etiqueta tendencia">Tendencia</span>
+                </div>
+                <div class="producto-imagen">
+                    <img src="Imagenes/A7P4.webp" alt="Zapato Casual Elite">
+                    <div class="producto-acciones">
+                        <button class="btn-accion" title="Vista rápida">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-accion" title="Agregar a favoritos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn-accion" title="Agregar al carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <div class="producto-categoria">Casuales</div>
+                    <h3>Zapato Casual Elite</h3>
+                    <div class="producto-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(95)</span>
+                    </div>
+                    <div class="producto-precio">
+                        <span class="precio-actual">$89.900</span>
+                    </div>
+                    <div class="producto-colores">
+                        <span class="color" style="background: #8B4513;" title="Café"></span>
+                        <span class="color" style="background: #000000;" title="Negro"></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Más productos... -->
+        </section>
+
+        <!-- Paginación -->
+        <div class="paginacion" data-aos="fade-up">
+            <button class="pagina-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="pagina-btn active">1</button>
+            <button class="pagina-btn">2</button>
+            <button class="pagina-btn">3</button>
+            <span>...</span>
+            <button class="pagina-btn">12</button>
+            <button class="pagina-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <!-- Modal Vista Rápida -->
+    <div class="modal-vista-rapida" id="modal-vista-rapida">
+        <div class="modal-contenido">
+            <button class="cerrar-modal">&times;</button>
+            <div class="modal-producto">
+                <div class="modal-imagen">
+                    <img src="ruta/producto1.jpg" alt="Producto">
+                    <div class="miniaturas">
+                        <img src="ruta/producto1-1.jpg" alt="Miniatura 1">
+                        <img src="ruta/producto1-2.jpg" alt="Miniatura 2">
+                        <img src="ruta/producto1-3.jpg" alt="Miniatura 3">
+                    </div>
+                </div>
+                <div class="modal-detalles">
+                    <h2>Zapatilla Deportiva Pro</h2>
+                    <div class="modal-rating">
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>(128 reseñas)</span>
+                    </div>
+                    <div class="modal-precio">
+                        <span class="precio-anterior">$129.900</span>
+                        <span class="precio-actual">$103.920</span>
+                    </div>
+                    <p class="modal-descripcion">
+                        Zapatillas deportivas de alto rendimiento con tecnología de amortiguación 
+                        avanzada y diseño ergonómico para máximo confort durante el ejercicio.
+                    </p>
+                    <div class="modal-opciones">
+                        <div class="selector-color">
+                            <h4>Color:</h4>
+                            <div class="colores">
+                                <span class="color active" style="background: #000000;" title="Negro"></span>
+                                <span class="color" style="background: #FF0000;" title="Rojo"></span>
+                                <span class="color" style="background: #0000FF;" title="Azul"></span>
+                            </div>
+                        </div>
+                        <div class="selector-talla">
+                            <h4>Talla:</h4>
+                            <div class="tallas">
+                                <button class="talla-btn">38</button>
+                                <button class="talla-btn active">39</button>
+                                <button class="talla-btn">40</button>
+                                <button class="talla-btn">41</button>
+                                <button class="talla-btn">42</button>
+                            </div>
+                        </div>
+                        <div class="selector-cantidad">
+                            <h4>Cantidad:</h4>
+                            <div class="cantidad-control">
+                                <button class="btn-cantidad" data-action="decrease">-</button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="btn-cantidad" data-action="increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-acciones">
+                        <button class="btn-agregar-carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al Carrito
+                        </button>
+                        <button class="btn-comprar-ahora">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Tu footer actual -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>

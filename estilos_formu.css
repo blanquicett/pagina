@@ -1,0 +1,318 @@
+:root {
+    /* Colores principales */
+    --color-primario: #2C5530;        /* Verde oscuro principal */
+    --color-secundario: #A8D5BA;      /* Verde sage */
+    --color-acento: #93B5B3;          /* Verde azulado para acentos */
+    
+    /* Colores de fondo */
+    --color-fondo: #F1F7EA;           /* Verde blanquecino */
+    --color-blanco: #FFFFFF;          /* Blanco puro */
+    --color-gris-claro: #f5f5f5;      /* Gris claro */
+    
+    /* Colores de texto */
+    --color-texto: #4A6670;           /* Verde grisáceo para texto principal */
+    --color-texto-claro: #666666;     /* Gris para texto secundario */
+    --color-texto-oscuro: #333333;    /* Casi negro para títulos */
+    
+    /* Colores de estado */
+    --color-error: #e74c3c;           /* Rojo para errores */
+    --color-exito: #2ecc71;           /* Verde para éxito */
+    --color-advertencia: #f1c40f;     /* Amarillo para advertencias */
+    
+    /* Colores hover y focus */
+    --color-hover: #234426;           /* Verde más oscuro para hover */
+    --color-focus: #7FA98F;           /* Verde medio para focus */
+    
+    /* Colores formulario */
+    --color-input-borde: var(--color-secundario);
+    --color-input-fondo: var(--color-blanco);
+    --color-input-texto: var(--color-texto);
+    --color-label: var(--color-texto-oscuro);
+    --color-placeholder: var(--color-texto-claro);
+    
+    /* Otros */
+    --color-borde: var(--color-secundario);    /* Color para bordes */
+    --color-sombra: rgba(0, 0, 0, 0.1);       /* Color para sombras */
+    
+    /* Valores comunes */
+    --borde-radio: 10px;
+    --transicion: all 0.3s ease;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ====== NAV SECUNDARIO (OTRAS PÁGINAS) ====== */
+.secondary-nav {
+    background: var(--color-primario);
+    padding: 1rem 0;
+    color: var(--color-blanco);
+}
+
+.secondary-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-home {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+.back-home:hover {
+    transform: translateX(-5px);
+}
+
+.page-title h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Estilos del formulario */
+.formulario {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-sombra);
+    border: 1px solid var(--color-borde);
+}
+
+.formulario h2 {
+    color: var(--color-texto);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Secciones del formulario */
+.seccion-formulario {
+    background-color: var(--color-primario);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--color-secundario);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.seccion-formulario h3 {
+    color: var(--color-texto);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-secundario);
+}
+
+/* Campos del formulario */
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-secundario);
+    border-radius: 6px;
+    font-size: 1em;
+    color: var(--color-texto);
+    transition: all 0.3s ease;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: var(--color-acento);
+    background-color: var(--color-fondo);
+    box-shadow: 0 0 5px rgba(147, 181, 179, 0.3);
+}
+
+/* Checkbox */
+.campo-formulario input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    accent-color: var(--color-secundario);
+}
+
+/* Mensajes de error */
+.error {
+    color: var(--color-error);
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Botón de envío */
+.btn-enviar {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+/* Campos de pago */
+.campos-pago {
+    padding: 15px;
+    background-color: var(--color-fondo);
+    border-radius: 6px;
+    margin-top: 15px;
+    border: 1px solid var(--color-secundario);
+}
+
+.oculto {
+    display: none;
+}
+
+/* Botón del carrito */
+.btn-carrito {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-acento);
+}
+
+.btn-carrito:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+/* Estados de validación */
+.campo-formulario input:valid {
+    border-color: var(--color-exito);
+}
+
+.campo-formulario input:invalid {
+    border-color: var(--color-error);
+}
+
+/* Select */
+.campo-formulario select option {
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+}
+
+/* Placeholder */
+::placeholder {
+    color: var(--color-texto);
+    opacity: 0.7;
+}
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-carrito img {
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.item-detalles {
+    flex-grow: 1;
+}
+
+.item-detalles h4 {
+    margin: 0;
+    color: var(--color-texto);
+}
+
+.item-detalles p {
+    margin: 5px 0 0;
+    color: var(--color-acento);
+}
+
+.total-carrito {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid var(--color-primario);
+    text-align: right;
+}
+
+/* Autofill */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--color-fondo) inset;
+    -webkit-text-fill-color: var(--color-texto);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formulario {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .seccion-formulario {
+        padding: 15px;
+    }
+
+    .btn-carrito {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+}
